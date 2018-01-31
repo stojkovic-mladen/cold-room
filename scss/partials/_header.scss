@@ -1,0 +1,31 @@
+.navbar {
+  margin-bottom: 0;
+  border-right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+
+.navbar-brand {
+  float: left;
+  width: 190px;
+  height: 60px;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.navbar-inverse .navbar-nav {
+  .active a {
+    color: #000;
+    background-color: #fff;
+    &:focus, &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+  li a {
+    color: #d5d5d5;
+  }
+}
