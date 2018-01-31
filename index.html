@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cold Room</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  * {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #000;
+  }
+  .navbar {
+    margin-bottom: 0;
+    border-right: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand {
+    float: left;
+    width: 190px;
+    height: 60px;
+    animation-delay:1s;
+
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+  .navbar-inverse .navbar-nav .active a:hover {
+    color: #000;
+    background-color: #fff;
+
+  }
+.navbar-inverse .navbar-nav li a {
+  color: #d5d5d5;
+}
+.carousel {
+  margin-top: 90px;
+
+}
+.carousel-caption {
+  top:50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+.btn {
+  font-size: 1.4em;
+  color: #fff;
+  padding: 12px 22px;
+  background: #000;
+  border:
+}
+.container {
+  margin: 4% auto;
+}
+#icon {
+  max-width: 200px;
+  margin: 1% auto;
+  border: 4px solid #fff;
+  opacity: 1;
+  transition: all 300ms;
+  border-radius: 80%;
+  width: 200px;
+  height: 200px;
+
+
+}
+#icon:focus, #icon:hover {
+  opacity: 0.7;
+  border: 2px solid #99CFE0;
+  border-radius: 20%;
+  height: 250px;
+
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  padding: 3%;
+  color: #fff;
+}
+.fa {
+  padding: 25px;
+  font-size: 30px;
+  color: #fff;
+}
+.fa:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+
+  }
+
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+
+
+  h2 {
+    font-size: 1.7px;
+  }
+}
+  </style>
+</head>
+<body>
+    <nav class="animated bounceIndown navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="animated jello navbar-brand"><img src="img/cold-room-brand.png" alt="" class="img-responsive"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- START SLIDER -->
+    <div id="myCarousel" class="animated bounceInUp carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="myCarousel" data-slide-to="1"></li>
+        <li data-target="myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/gramofon.gif" alt="dj1" class="img-responsive">
+          <div class="carousel-caption">
+            <h1 class="animated slideInLeft">Wellcome to cold room <br>virtual agency for dj hiering</h1>
+            <br>
+            <button type="button" class="animated slideInRight btn btn-default">Get Started</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/dj2.jpg" alt="dj2" class="img-responsive">
+          <div class="carousel-caption">
+            <h1 class="animated fadeInLeftBig">Wellcome to cold room <br>virtual agency for dj hiering</h1>
+            <br>
+            <button type="button" class="animated fadeInDown Big btn btn-default">Get Started</button>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/dj3.jpg" alt="dj3" class="img-responsive">
+        </div>
+      </div>
+        <!-- START SLIDER CONTROLS -->
+        <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        </a>
+        <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+
+      <!-- END SLIDER -->
+      <!-- START DJ CONTAINER -->
+    <div id="services" class="container text-center">
+      <h2>DJ`s</h2>
+        <hr>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/djc1.jpg" alt="djc1" id="icon">
+            <h4>Dj Samir</h4>
+          <h4><a href="#hidden" data-toggle="collapse">more</a></h4>
+          <div id="hidden" class="collapse">
+            <h4>Klasican cigan</h4>
+            <p>Voli cigansko kolo i smrdi 24/7</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc2.jpg" alt="djc2" id="icon">
+          <h4>Dj ziki</h4>
+          <h4><a href="#hidden1" data-toggle="collapse">more</a></h4>
+          <div id="hidden1" class="collapse">
+            <h4>Jebe keve</h4>
+            <p>Jebe keve na kvadrat i pisa u supu</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc3.jpg" alt="djc3" id="icon">
+          <h4>Dj kurta</h4>
+          <h4><a href="#hidden2" data-toggle="collapse">more</a></h4>
+          <div id="hidden2" class="collapse">
+            <h4>Dj or DIE</h4>
+            <p>jednom je imao priliku da bude za dj pultom i tu je napravio ovu fotografiju</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="img/djc4.jpg" alt="djc4" id="icon">
+            <h4>Dj Samir</h4>
+          <h4><a href="#hidden3" data-toggle="collapse">more</a></h4>
+          <div id="hidden3" class="collapse">
+            <h4>Klasican cigan</h4>
+            <p>Voli cigansko kolo i smrdi 24/7</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc5.jpg" alt="djc5" id="icon">
+          <h4>Dj ziki</h4>
+          <h4><a href="#hidden4" data-toggle="collapse">more</a></h4>
+          <div id="hidden4" class="collapse">
+            <h4>Jebe keve</h4>
+            <p>Jebe keve na kvadrat i pisa u supu</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc6.jpg" alt="djc6" id="icon">
+          <h4>Dj kurta</h4>
+          <h4><a href="#hidden5" data-toggle="collapse">more</a></h4>
+          <div id="hidden5" class="collapse">
+            <h4>Dj or DIE</h4>
+            <p>jednom je imao priliku da bude za dj pultom i tu je napravio ovu fotografiju</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="img/djc7.jpg" alt="djc7" id="icon">
+            <h4>Dj Samir</h4>
+          <h4><a href="#hidden6" data-toggle="collapse">more</a></h4>
+          <div id="hidden6" class="collapse">
+            <h4>Klasican cigan</h4>
+            <p>Voli cigansko kolo i smrdi 24/7</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc8.jpg" alt="djc8" id="icon">
+          <h4>Dj ziki</h4>
+          <h4><a href="#hidden7" data-toggle="collapse">more</a></h4>
+          <div id="hidden7" class="collapse">
+            <h4>Jebe keve</h4>
+            <p>Jebe keve na kvadrat i pisa u supu</p>
+          </div>
+        </div>
+        <div  class="col-sm-4">
+          <img src="img/djc9.jpg" alt="djc9" id="icon">
+          <h4>Dj kurta</h4>
+          <h4><a href="#hidden8" data-toggle="collapse">more</a></h4>
+          <div id="hidden8" class="collapse">
+            <h4>Dj or DIE</h4>
+            <p>jednom je imao priliku da bude za dj pultom i tu je napravio ovu fotografiju</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START DJ CONTAINER -->
+    <div id="about" class="container text-center">
+      <h2>About</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>MI SMO KARINA BANANA </h4>
+          <p>Bla bla tu munes nesto fino bla bla bla ovakve usluge vrsimo bla bla bla bla laaaaaaaaaaaaa</p>
+          <h4>MI SMO KARINA BANANA </h4>
+          <p>Bla bla tu munes nesto fino bla bla bla ovakve usluge vrsimo bla bla bla bla laaaaaaaaaaaaa</p>
+        </div>
+        <div class="col-md-6">
+            <img src="img/about-pick.jpg" alt="about-pick" class="img-responsive text-center">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>MI SMO KARINA BANANA </h4>
+          <p>Bla bla tu munes nesto fino bla bla bla ovakve usluge vrsimo bla bla bla bla laaaaaaaaaaaaa</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/gramofon2.gif" alt="karina banana" class="img-responsive">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>MI SMO KARINA BANANA </h4>
+          <p>Bla bla tu munes nesto fino bla bla bla ovakve usluge vrsimo bla bla bla bla laaaaaaaaaaaaa</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <img src="img/brucelee.jpg" alt="brucelee" class="img-responsive">
+        </div>
+      </div>
+    </div>
+<hr>
+      <footer id="contact" class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Contact Us</h3>
+            <br>
+            <h4>Ur addres and contact here</h4>
+          </div>
+          <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/cold-room-brand.png" alt="bunny" class="icon img-responsive" >
+          </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
