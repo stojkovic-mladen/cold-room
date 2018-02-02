@@ -45,64 +45,243 @@ body {
   background: #000;
   border: 2px solid #fff; }
 
-.container {
-  margin: 4% auto; }
-
 .icon {
-  max-width: 200px;
+  position: relative;
   margin: 10% auto;
   border: 2px solid #fff;
-  opacity: 1;
-  transition: all 300ms;
-  border-radius: 80%;
-  width: 200px;
-  height: 200px; }
-  .icon:focus, .icon:hover {
-    opacity: 0.7;
-    border: 2px solid #99CFE0;
-    border-radius: 20%;
-    height: 250px; }
+  border-radius: 50%;
+  width: 400px;
+  height: 400px; }
 
-.img-container {
+.hs-wrapper {
+  width: 350px;
+  height: 450px;
   position: relative;
-  width: 50%; }
+  overflow: hidden;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px #000; }
 
-.icon {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.overlay {
-  position: absolute;
+.hs-wrapper img {
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA; }
-
-.container:hover .overlay {
-  opacity: 1; }
-
-.text {
-  color: white;
-  font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; }
+  -webkit-animation: showMe 0.8s linear infinite 0s forwards;
+  -moz-animation: showMe 0.8s linear infinite 0s forwards;
+  -o-animation: showMe 0.8s linear infinite 0s forwards;
+  -ms-animation: showMe 0.8s linear infinite 0s forwards;
+  animation: showMe 0.8s linear infinite 0s forwards;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused; }
 
-@media (max-width: 600px) {
+.hs-wrapper img:nth-child(1) {
+  z-index: 9; }
+
+.hs-wrapper img:nth-child(2) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 8; }
+
+.hs-wrapper img:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 7; }
+
+.hs-wrapper img:nth-child(4) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 6; }
+
+.hs-wrapper img:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 5; }
+
+.hs-wrapper img:nth-child(6) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 4; }
+
+.hs-wrapper img:nth-child(7) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-nimation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 3; }
+
+.hs-wrapper img:nth-child(8) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  z-index: 2; }
+
+.hs-wrapper:hover img {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  -ms-animation-play-state: running;
+  animation-play-state: running; }
+
+.hs-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear; }
+
+.hs-overlay span {
+  display: block;
+  padding: 20px;
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-shadow: 0 0 7px aqua, 2px 2px 8px #000;
+  font-size: 50px;
+  text-align: center;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hs-overlay p {
+  display: block;
+  padding: 250px;
+  position: absolute;
+  width: 150px;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-shadow: 0 0 4px aqua, 2px 2px 4px #000;
+  font-size: 20px;
+  text-align: center;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hs-wrapper:hover .hs-overlay {
+  position: absolute;
+  opacity: .7;
+  box-shadow: 0 0 0 50px aqua;
+  margin: 0 auto;
+  -webkit-border-top-right-radius: 200px;
+  -webkit-border-bottom-left-radius: 200px;
+  -moz-border-radius-topright: 200px;
+  -moz-border-radius-bottomleft: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px; }
+
+@-webkit-keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100; }
+  12% {
+    visibility: visible;
+    z-index: 100; }
+  25% {
+    visibility: hidden;
+    z-index: 0; }
+  100% {
+    visibility: hidden;
+    z-index: 0; } }
+@-moz-keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100; }
+  12% {
+    visibility: visible;
+    z-index: 100; }
+  25% {
+    visibility: hidden;
+    z-index: 0; }
+  100% {
+    visibility: hidden;
+    z-index: 0; } }
+@-o-keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100; }
+  12% {
+    visibility: visible;
+    z-index: 100; }
+  25% {
+    visibility: hidden;
+    z-index: 0; }
+  100% {
+    visibility: hidden;
+    z-index: 0; } }
+@-ms-keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100; }
+  12% {
+    visibility: visible;
+    z-index: 100; }
+  25% {
+    visibility: hidden;
+    z-index: 0; }
+  100% {
+    visibility: hidden;
+    z-index: 0; } }
+@keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100; }
+  12% {
+    visibility: visible;
+    z-index: 100; }
+  25% {
+    visibility: hidden;
+    z-index: 0; }
+  100% {
+    visibility: hidden;
+    z-index: 0; } }
+@media (max-width: 768px) {
   .carousel-caption {
     display: none; }
 
   h2 {
     font-size: 20px; } }
+.hs-overlay {
+  width: 400px;
+  height: 450px; }
+
 footer {
   width: 100%;
   background-color: #000;
