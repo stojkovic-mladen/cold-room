@@ -8,14 +8,14 @@ section
   border-radius: 4px;
   overflow: hidden;
   max-width: 300px;
-  border: 2px solid #333;
+  border: 5px solid #333;
   max-height: 300px;
 }
 .djBox h3 {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: -50;
+  top: 100%;
   text-align: center;
   width: 100%;
   font-weight: bold;

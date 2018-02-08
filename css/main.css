@@ -37,9 +37,9 @@ body {
 .mainPageSlides img {
   margin-top: 90px;
   width: 100%;
-  text-align: center;
   height: 600px;
   max-height: 600px;
+  min-height: 300px;
   margin: auto; }
 
 .peopleCarouselImg img {
@@ -50,8 +50,10 @@ body {
   margin: auto; }
 
 .carousel-caption {
+  color: #eee;
   top: 50%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-shadow: 1px 4px #333; }
 
 .btn {
   font-size: 1.4em;
@@ -76,14 +78,14 @@ section {
   border-radius: 4px;
   overflow: hidden;
   max-width: 300px;
-  border: 2px solid #333;
+  border: 5px solid #333;
   max-height: 300px; }
 
 .djBox h3 {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: -50;
+  top: 100%;
   text-align: center;
   width: 100%;
   font-weight: bold;
