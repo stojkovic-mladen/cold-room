@@ -1,47 +1,64 @@
-.icon {
-  position: relative;
-  margin: 0 auto;
-  width: 350px;
-  height: 400px;
+section
+{
+  margin: 150px 0;
 }
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.slider-inner {
-  width: 300px;
-  height: 300px;
+.djBox {
   position: relative;
+  margin: 40px auto;
+  border-radius: 4px;
   overflow: hidden;
-  float: left;
-  padding: 3px;
-  border: #666 solid 1px;
-  img {
-    display: none;
-    width: 300px;
-    height: 300px;
-    &.active {
-      display: inline-block;
-    }
-  }
+  max-width: 300px;
+  border: 2px solid #333;
+  max-height: 300px;
 }
-
-.prev, .next {
-  float: left;
-  margin-top: 130px;
-  cursor: pointer;
+.djBox h3 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: -50;
+  transform: translate(-50%);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  transition: .5s;
 }
-
-.prev {
-  position: relative;
-  margin-right: -45px;
-  z-index: 100;
+.djBox:hover h3 {
+  top: 10%;
+  transform: translateY(-50%);
 }
-
-.next {
-  position: relative;
-  margin-left: -45px;
-  z-index: 100;
+.djBox ul {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  background: rgba(0,0,0,.2);
+  transform: translateY(50px);
+  transition: .5s;
+}
+.djBox:hover ul {
+  transform: translateY(-60px);
+}
+.djBox ul li {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.djBox ul li a {
+  color: $ice-color;
+  font-size: 30px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 2px 2px #333;
+}
+.djBox ul li:hover
+{
+  background: rgba(200,200,200,.7);
+  color: #000;
+  text-decoration: none;
+  text-shadow: 1px 1px #eee;
 }

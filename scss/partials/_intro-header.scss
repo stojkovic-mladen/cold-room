@@ -1,7 +1,23 @@
 .carousel {
   margin-top: 90px;
+
+}
+.mainPageSlides img {
+  margin-top: 90px;
+  width: 100%;
+  text-align: center;
+  height: 600px;
+  max-height: 600px;
+  margin: auto;
 }
 
+.peopleCarouselImg img {
+  width: auto;
+  text-align: center;
+  height: 600px;
+  max-height: 600px;
+  margin: auto;
+}
 .carousel-caption {
   top: 50%;
   text-transform: uppercase;
@@ -19,9 +35,6 @@
   .carousel-caption {
   display: none;
   }
-
-  h2 {
-    font-size: 20px; }
 }
 .hs-overlay{
   width: 400px;
