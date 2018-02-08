@@ -62,9 +62,12 @@ body {
   background: #000;
   border: 2px solid #fff; }
 
+@media (max-width: 1300px) {
+  .carousel-caption {
+    top: 2%; } }
 @media (max-width: 768px) {
   .carousel-caption {
-    display: none; } }
+    top: 0; } }
 .hs-overlay {
   width: 400px;
   height: 450px; }
