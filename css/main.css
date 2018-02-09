@@ -152,6 +152,26 @@ section {
   text-decoration: none;
   text-shadow: 1px 1px #eee; }
 
+form {
+  max-width: 450px;
+  margin: 0 auto 50px; }
+  form input, form textarea {
+    color: #000;
+    border: 3px solid #fff;
+    width: 100%; }
+
+.contact-info-group label {
+  width: 50%;
+  padding-right: 10px;
+  float: left; }
+
+label {
+  display: block;
+  margin-bottom: 20px; }
+
+span {
+  display: block; }
+
 footer {
   width: 100%;
   background-color: #000;
