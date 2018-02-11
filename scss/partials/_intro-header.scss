@@ -18,30 +18,42 @@
   max-height: 600px;
   margin: auto;
 }
+// for all carousel`s
 .carousel-caption {
-  color: #eee;
-  top: 50%;
+  top: 0;
+  padding: 5%;  font-size: 50px;
   text-transform: uppercase;
-  text-shadow: 1px 4px #333;
+  text-shadow: 1px 10px 10px 2px #222;
+p {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 2%;
+  padding: 5%;
+  border: 2px #eee solid;
+  color: #eee;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+}
+// for carousel on main page
+.main-caption {
+  top: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: 1px 6px 4px 2px #222;
+p {
+  color: #eee;
+}
 }
 
-.btn {
-  font-size: 1.4em;
-  color: #fff;
-  padding: 12px 22px;
-  background: #000;
-  border: 2px solid #fff;
-}
+
 
 @media (max-width: 1300px) {
-  .carousel-caption {
-    top: 2%;
-  // display: none;
-  }
+
 }
 @media (max-width: 768px) {
   .carousel-caption {
     top: 0;
+    font-size: 30px;
   // display: none;
   }
 }
