@@ -47,10 +47,10 @@ h1, h2, h3, h4, h5, p {
     font-size: 18px;
     padding: 2px; } }
 .carousel {
-  margin-top: 90px; }
+  margin-top: 100px; }
 
 .mainPageSlides img {
-  margin-top: 90px;
+  position: relative;
   width: 100%;
   height: 600px;
   max-height: 600px;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, p {
   margin: auto; }
 
 .peopleCarouselImg img {
+  position: relative;
   width: auto;
   text-align: center;
   height: 600px;
@@ -65,12 +66,19 @@ h1, h2, h3, h4, h5, p {
   margin: auto; }
 
 .carousel-caption {
-  top: 0;
-  padding: 5%;
-  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 10px 10px 2px #222; }
   .carousel-caption p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 2%;
     padding: 5%;
@@ -79,22 +87,25 @@ h1, h2, h3, h4, h5, p {
     animation-delay: 1s;
     animation-duration: 2s; }
 
-.main-caption {
-  top: 0;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-shadow: 1px 6px 4px 2px #222; }
-  .main-caption p {
-    color: #eee; }
-
+@media (max-width: 1457px) {
+  .carousel-caption {
+    font-size: 40px; } }
+@media (max-width: 1250px) {
+  .carousel-caption {
+    font-size: 35px; } }
+@media (max-width: 968px) {
+  .carousel-caption {
+    font-size: 30px;
+    padding: 2%; } }
 @media (max-width: 768px) {
   .carousel-caption {
-    top: 0;
-    font-size: 30px; } }
-.hs-overlay {
-  width: 400px;
-  height: 450px; }
-
+    font-size: 25px; } }
+@media (max-width: 580px) {
+  .carousel-caption {
+    font-size: 20px; } }
+@media (max-width: 450px) {
+  .carousel-caption {
+    font-size: 18px; } }
 section {
   margin: 150px 0; }
 
@@ -177,18 +188,22 @@ section {
   text-shadow: 1px 1px #eee; }
 
 .equipment-container {
-  margin: 0 auto;
   position: relative;
-  padding: 10%;
-  padding-top: 50%;
   height: 500px;
   background: url(../img/2.jpg) no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
-  border: 30px;
+  border: 4px #eee solid;
   border-radius: 4px; }
   .equipment-container .banner-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: rgba(50, 50, 50, 0.5);
     border: 2px rgba(230, 230, 230, 0.5) solid; }
     .equipment-container .banner-content h3 {

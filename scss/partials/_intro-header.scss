@@ -1,9 +1,10 @@
 .carousel {
-  margin-top: 90px;
+  margin-top: 100px;
+
 
 }
 .mainPageSlides img {
-  margin-top: 90px;
+  position: relative;
   width: 100%;
   height: 600px;
   max-height: 600px;
@@ -12,6 +13,7 @@
 }
 
 .peopleCarouselImg img {
+  position: relative;
   width: auto;
   text-align: center;
   height: 600px;
@@ -20,11 +22,19 @@
 }
 // for all carousel`s
 .carousel-caption {
-  top: 0;
-  padding: 5%;  font-size: 50px;
+ position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 10px 10px 2px #222;
 p {
+  display: inline-block;
   background-color: rgba(0,0,0,.5);
   border-radius: 2%;
   padding: 5%;
@@ -34,30 +44,38 @@ p {
   animation-duration: 2s;
 }
 }
-// for carousel on main page
-.main-caption {
-  top: 0;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-shadow: 1px 6px 4px 2px #222;
-p {
-  color: #eee;
-}
-}
 
 
-
-@media (max-width: 1300px) {
-
-}
-@media (max-width: 768px) {
+@media (max-width: 1457px) {
   .carousel-caption {
-    top: 0;
-    font-size: 30px;
-  // display: none;
+      font-size: 40px;
   }
 }
-.hs-overlay{
-  width: 400px;
-	height: 450px;
+@media (max-width: 1250px) {
+  .carousel-caption {
+      font-size: 35px;
+  }
+ }
+
+@media (max-width: 968px) {
+  .carousel-caption {
+    font-size: 30px;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+      font-size: 25px;
+  }
+}
+@media (max-width: 580px) {
+  .carousel-caption {
+      font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .carousel-caption {
+      font-size: 18px;
+  }
 }
