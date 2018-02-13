@@ -1,5 +1,7 @@
 .carousel {
   margin-top: 100px;
+
+
 }
 .mainPageSlides img {
   margin-top: 100px;
@@ -38,8 +40,14 @@ p {
   padding: 2%;
   border: 2px #eee solid;
   color: #eee;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
   animation-delay: 1s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 }
 

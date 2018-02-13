@@ -1,0 +1,17 @@
+.about-container {
+  margin: 0 auto;
+  position: relative;
+  .about-content {
+    padding-left: 25%;
+    padding-right: 25%;
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    }
+  }
+  .about-img {
+    img {
+      max-height: 400px;
+      width: 100%;
+    }
+
+  }

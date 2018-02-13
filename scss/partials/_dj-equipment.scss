@@ -1,4 +1,5 @@
 .equipment-container {
+  margin: 0 auto;
   position: relative;
   height: 500px;
   background: url(../img/2.jpg) no-repeat;
@@ -8,6 +9,7 @@
   border: 4px #eee solid;
   border-radius: 4px;
   .banner-content {
+    padding: 2%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -15,7 +17,7 @@
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background-color: rgba(50,50,50,.5);
+    background-color: rgba(0,0,0,.6);
     border: 2px rgba(230,230,230,.5) solid;
     h3 {
       font-size: 30px;
