@@ -10,6 +10,12 @@ body {
 h1, h2, h3, h4, h5, p {
   font-family: 'Cabin', sans-serif; }
 
+hr {
+  display: block;
+  border: 0px;
+  height: 10px;
+  background-image: url(../img/border.jpg); }
+
 .navbar {
   margin-bottom: 0;
   border-right: 0;
@@ -199,10 +205,6 @@ section {
   margin: 0 auto;
   position: relative;
   height: 500px;
-  background: url(../img/2.jpg) no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
   border: 4px #eee solid;
   border-radius: 4px; }
   .equipment-container .banner-content {
@@ -232,6 +234,18 @@ section {
       border: 4px solid #222;
       text-shadow: 1px 1px #aaa; }
 
+.option1 {
+  background: url(../imgClients/equipment/option1.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.option2 {
+  background: url(../imgClients/equipment/option2.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover; }
+
 .about-container {
   margin: 0 auto;
   position: relative; }
@@ -243,7 +257,7 @@ section {
     background: rgba(0, 0, 0, 0.6); }
 
 .about-img img {
-  max-height: 700px;
+  max-height: 400px;
   width: 100%; }
 
 @media (max-width: 768px) {

@@ -2,10 +2,7 @@
   margin: 0 auto;
   position: relative;
   height: 500px;
-  background: url(../img/2.jpg) no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
+
   border: 4px #eee solid;
   border-radius: 4px;
   .banner-content {
@@ -38,4 +35,17 @@
       text-shadow: 1px 1px #aaa;
     }
   }
+}
+.option1 {
+  background: url(../imgClients/equipment/option1.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.option2 {
+  background: url(../imgClients/equipment/option2.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
 }
