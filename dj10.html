@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cold Room</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="animated bounceIndown navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="animated jello navbar-brand"><img src="img/cold-room-brand.png" alt="" class="img-responsive"></a>
+          <a href="https://www.facebook.com/Cold-Room-DJs-558445684516223/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#djs">Dj`s</a></li>
+            <li><a href="index.html#equipment">Equipment</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <header class="intro-header">
+    <!-- START SLIDER -->
+    <div id="myCarousel" class="animated bounceInUp carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active peopleCarouselImg">
+          <img src="imgClients\dj10\djc1.jpg" alt="dj1" class="img-responsive">
+          <div class="carousel-caption">
+            <p class="animated fadeInDownBig"><strong>DJ/ Producer who's known for his exhilarating Afro sound</strong></p>
+            <br>
+          </div>
+        </div>
+        <div class="item peopleCarouselImg">
+          <img src="imgClients\dj10\djc2.jpg" alt="dj2" class="img-responsive">
+          <div class="carousel-caption">
+            <p class="animated fadeInDownBig"><strong>In 2016 he released his first track at 'Spinnin' Records</strong></p>
+            <br>
+          </div>
+        </div>
+        <div class="item peopleCarouselImg">
+          <img src="imgClients\dj10\djc3.jpg" alt="dj4" class="img-responsive">
+          <div class="carousel-caption">
+            <p class="animated animated fadeInDownBig"><strong>Needless to say that the Afro sound that he embraces is recognized</strong></p>
+            <br>
+          </div>
+        </div>
+        <div class="item peopleCarouselImg">
+          <img src="imgClients\dj10\djc4.jpg" alt="dj3" class="img-responsive">
+          <div class="carousel-caption">
+            <p class="animated animated fadeInDownBig"><strong>and heard back in many different musical movements</strong></p>
+            <br>
+          </div>
+        </div>
+      </div>
+        <!-- START SLIDER CONTROLS -->
+        <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        </a>
+        <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+        <!-- END SLIDER CONTROLS -->
+    </div>
+      <!-- END SLIDER -->
+  </header>
+<hr>
+<!--START FOOTER SECTION -->
+      <footer id="contact" class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Contact Us</h2>
+            <br>
+            <h4>Ur addres and contact here</h4>
+          </div>
+          <div class="col-sm-4">
+            <form action="https://formspree.io/vladan@krsticmusic.com" method="POST">
+              <div class="contact-info-group">
+                <label><span>Your Name</span>
+                <input type="text" name="name"></label>
+
+                <label><span>Your Email</span>
+                <input type="email" name="_replyto"></label>
+              </div>
+
+                <label><span>Tell me about your project</span>
+                <textarea name="message" rows="4" cols="8">I want to hire Henry X for my project ...
+start date:  /  /  , end date:  /  / .</textarea></label>
+
+                <input type="submit" value="Send">
+              </form>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/cold-room-brand.png" alt="bunny" class="img-responsive" >
+          </div>
+          </div>
+      </footer>
+<!--END FOOTER SECTION -->
+</body>
+</html>
