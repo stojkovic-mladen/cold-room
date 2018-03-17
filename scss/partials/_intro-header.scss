@@ -22,10 +22,11 @@
 }
 // for all carousel`s
 .carousel-caption {
-  display: inline-block;
+
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 80%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -35,9 +36,9 @@
   text-shadow: 1px 10px 10px 2px #222;
 p {
   background-color: rgba(0,0,0,.5);
-  border-radius: 2%;
+  border-radius: 10px;
   padding: 2%;
-  border: 2px #eee solid;
+  border: 8px #eee ridge;
   color: #eee;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
@@ -85,6 +86,6 @@ p {
 }
 @media (max-width: 320px) {
   .carousel-caption {
-      font-size: 15px;
+      font-size: 10px;
   }
 }
