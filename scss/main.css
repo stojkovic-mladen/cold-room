@@ -9,7 +9,7 @@ body {
   background-color: #000; }
 
 h1, h2, h3, h4, h5, p {
-  font-family: 'Cabin', sans-serif; }
+  font-family: 'Shrikhand', cursive; }
 
 hr {
   display: block;
@@ -35,7 +35,7 @@ hr {
 
 .navbar-inverse .navbar-nav li a {
   color: #eee;
-  text-shadow: 1px 1px #D4F0FF; }
+  text-shadow: 2px 2px #D4F0FF; }
   .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:hover {
     color: #222;
     background-color: #fff; }
