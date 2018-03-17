@@ -14,24 +14,34 @@
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     background-color: rgba(0,0,0,.6);
-    border: 4px rgba(230,230,230,.5) ridge;
+    border: 4px $ice-color ridge;
     h3 {
       font-size: 30px;
     }
     .btn {
-      color: #eee;
-      width: 100%;
-      font-size: 1.7em;
-      padding: 12px 22px;
-      background: rgba(50,50,50,.5);
-      border: 2px #eee ridge;
-      border-radius: 2%;
+      position: absolute;
+      margin-top: 15px;
+      height: 40px;
+      width: 70%;
+      padding: 2px;
+      font-size: 18px;
+      background: #000;
+      border: 4px $ice-color ridge;
+      border-radius: 25px;
       text-transform: uppercase;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      span {
+        color: $ice-color;
+      }
     }
     .btn:hover {
-      background: rgba(240,240,240,.5);
+      background: #aaa;
       border: 2px #222 ridge;
       text-shadow: 1px 1px #aaa;
+      border: 4px $ice-color ridge;
     }
   }
 }
