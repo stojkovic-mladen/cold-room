@@ -16,11 +16,12 @@
     background-color: rgba(0,0,0,.6);
     border: 4px $ice-color ridge;
     h3 {
+      margin-bottom: 5%;
       font-size: 30px;
     }
     .btn {
       position: absolute;
-      margin-top: 15px;
+      margin-top: 5%;
       height: 40px;
       width: 70%;
       padding: 2px;
@@ -57,4 +58,24 @@
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .equipment-container {
+    .banner-content {
+      h3 {
+      margin-bottom: 20%;
+      font-size: 20px;
+      }
+      .btn {
+      font-size: 14px;
+      width: 95%;
+      }
+      a {
+        span {
+          margin-top: 1%;
+        }
+      }
+    }
+  }
 }

@@ -15,7 +15,7 @@ footer {
       }
     }
     .btn {
-      margin-top: -20px;
+      margin-top: -5%;
       height: 10px;
       width: 50%;
       input {
@@ -44,6 +44,28 @@ footer {
       -moz-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+footer {
+  .mail-content {
+    .btn {
+      margin-top: -5%;
+      width: 75%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+footer {
+  .mail-content {
+    .btn {
+      margin-top: -10%;
+      width: 100%;
+      }
     }
   }
 }
