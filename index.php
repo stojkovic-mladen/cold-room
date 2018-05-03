@@ -91,196 +91,36 @@
       <h2>COLD ROOM DJ's</h2>
       <hr>
       <div class="row">
-        <div class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj1\djcp.png" class="img-responsive" alt="">
-            <h3>Vladan Krstic</h3>
-            <ul>
-              <li><a href="dj1.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj2\djcp.png" class="img-responsive" alt="">
-            <h3>Safe T</h3>
-            <ul>
-              <li><a href="dj2.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
+      <?php
+      include("includes/database.php");
 
-        <div class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj3\djcp.jpg" class="img-responsive" alt="">
-            <h3>Sara G</h3>
-            <ul>
-              <li><a href="dj3.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj4\djcp.jpg" class="img-responsive" alt="">
-            <h3>Darko De Jan</h3>
-            <ul>
-              <li><a href="dj4.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj5\djcp.jpg" class="img-responsive" alt="">
-            <h3>Smooth</h3>
-            <ul>
-              <li><a href="dj5.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj6\djcp.jpeg" class="img-responsive" alt="">
-            <h3>Lady Sandra</h3>
-            <ul>
-              <li><a href="dj6.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj7\djcp.jpg" class="img-responsive" alt="">
-            <h3>Nader</h3>
-            <ul>
-              <li><a href="dj7.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj8\djcp.jpg" class="img-responsive" alt="">
-            <h3>Marzava</h3>
-            <ul>
-              <li><a href="dj8.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj9\djcp.jpg" class="img-responsive" alt="">
-            <h3>Margo Sahara</h3>
-            <ul>
-              <li><a href="dj9.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj10\djcp.jpeg" class="img-responsive" alt="">
-            <h3>Henry X</h3>
-            <ul>
-              <li><a href="dj10.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj11\djcp.jpg" class="img-responsive" alt="">
-            <h3>Jus Tad</h3>
-            <ul>
-              <li><a href="dj11.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj12\djcp.jpg" class="img-responsive" alt="">
-            <h3>Bagdat</h3>
-            <ul>
-              <li><a href="dj12.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj13\djcp.jpg" class="img-responsive" alt="">
-            <h3>Ramzy</h3>
-            <ul>
-              <li><a href="dj13.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj14\djcp.jpg" class="img-responsive" alt="">
-            <h3>Nikodia</h3>
-            <ul>
-              <li><a href="dj14.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj15\djcp.jpg" class="img-responsive" alt="">
-            <h3>Kabo</h3>
-            <ul>
-              <li><a href="dj15.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj16\djcp.jpg" class="img-responsive" alt="">
-            <h3>Repete</h3>
-            <ul>
-              <li><a href="dj16.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj17\djcp.jpg" class="img-responsive" alt="">
-            <h3>Emina</h3>
-            <ul>
-              <li><a href="dj17.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj18\djcp.jpg" class="img-responsive" alt="">
-            <h3>K1</h3>
-            <ul>
-              <li><a href="dj18.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj19\djcp.jpg" class="img-responsive" alt="">
-            <h3>Levi Da Cruz</h3>
-            <ul>
-              <li><a href="dj19.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj20\djcp.jpg" class="img-responsive" alt="">
-            <h3>Amine Bechri</h3>
-            <ul>
-              <li><a href="dj20.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
-        </div>
-        <div  class="animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <div class="djBox">
-            <img src="imgClients\dj21\djcp.jpg" class="img-responsive" alt="">
-            <h3>Janny Vas</h3>
-            <ul>
-              <li><a href="dj21.html"><p>click for more</p></a></li>
-            </ul>
-          </div>
+      $run_profiles = mysqli_query($con, "SELECT * FROM profiles");
+
+
+      while($row_profiles = mysqli_fetch_array($run_profiles)) {
+          $profile_id = $row_profiles['profile_id'];
+          $profile_name = $row_profiles['profile_name'];
+          $profile_img = $row_profiles['profile_img'];
+
+         echo "
+         <div class='animated revealIn fadeInUp col-lg-3 col-md-3 col-sm-4 col-xs-12'>
+           <div class='djBox'>
+             <img src='imgClients/$profile_img' class='img-responsive' alt='DJ IMG'>
+             <h3>$profile_name</h3>
+             <ul>
+               <li><a href='details.php?profile=$profile_id'><p>click for more</p></a></li>
+             </ul>
+           </div>
+         </div>
+
+         ";
+
+      }
+
+
+      ?>
+
         </div>
 
       </div>

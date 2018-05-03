@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Cold Room</title>
@@ -26,16 +25,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button17
-          <a href="index.html" class="animated jello navbar-brand"><img src="img/cold-room-brand2.png" alt="" class="img-responsive"></a>
+          </button>
+          <a href="index.php" class="animated jello navbar-brand"><img src="img/cold-room-brand2.png" alt="" class="img-responsive"></a>
           <a href="https://www.facebook.com/Cold-Room-DJs-558445684516223/" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-instagram"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#djs">Dj`s</a></li>
-            <li><a href="index.html#equipment">Equipment</a></li>
+            <li><a href="index.php#djs">Dj`s</a></li>
+            <li><a href="index.php#equipment">Equipment</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -53,34 +52,66 @@
         <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item active peopleCarouselImg">
-          <img src="imgClients\dj21\djc1.jpeg" alt="dj1" class="img-responsive">
-          <div class="carousel-caption">
-            <p class="animated fadeInDownBig"><strong>Janny Vas has a love for deep vibes, quirky chunes and big beats</strong></p>
-            <br>
-          </div>
-        </div>
-        <div class="item peopleCarouselImg">
-          <img src="imgClients\dj21\djc2.jpg" alt="dj2" class="img-responsive">
-          <div class="carousel-caption">
-            <p class="animated fadeInDownBig"><strong>With her vast knowledge of great music</strong></p>
-            <br>
-          </div>
-        </div>
-        <div class="item peopleCarouselImg">
-          <img src="imgClients\dj21\djc3.jpg" alt="dj4" class="img-responsive">
-          <div class="carousel-caption">
-            <p class="animated animated fadeInDownBig"><strong>Janny Vas lays down top quality tuneage to create a cool</strong></p>
-            <br>
-          </div>
-        </div>
-        <div class="item peopleCarouselImg">
-          <img src="imgClients\dj21\djc4.jpg" alt="dj3" class="img-responsive">
-          <div class="carousel-caption">
-            <p class="animated animated fadeInDownBig"><strong>dance-oriented atmosphere that gets the party started</strong></p>
-            <br>
-          </div>
-        </div>
+
+          <?php
+            if(isset($_GET['profile'])) {
+
+                include('includes/database.php');
+
+                $run_profiles = mysqli_query($con, "SELECT * FROM profiles");
+                while($row_profiles = mysqli_fetch_array($run_profiles)) {
+
+                    $profile_id = $row_profiles['profile_id'];
+                    $profile_name = $row_profiles['profile_name'];
+                    $profile_img = $row_profiles['profile_img'];
+                    $img1 = $row_profiles['img1'];
+                    $img2 = $row_profiles['img2'];
+                    $img3 = $row_profiles['img3'];
+                    $img4 = $row_profiles['img4'];
+                    $text1 = $row_profiles['text1'];
+                    $text2 = $row_profiles['text2'];
+                    $text3 = $row_profiles['text3'];
+                    $text4 = $row_profiles['text4'];
+
+                }
+
+            }
+
+            echo "
+
+
+                    <div class='item active peopleCarouselImg'>
+                      <img src='imgClients/$img1' alt='dj1' class='img-responsive'>
+                      <div class='carousel-caption'>
+                        <p class='animated fadeInDownBig'><strong>$text1</strong></p>
+                        <br>
+                      </div>
+                    </div>
+                    <div class='item peopleCarouselImg'>
+                      <img src='imgClients/$img2' alt='dj2' class='img-responsive'>
+                      <div class='carousel-caption'>
+                        <p class='animated fadeInDownBig'><strong>$text2</strong></p>
+                        <br>
+                      </div>
+                    </div>
+                    <div class='item peopleCarouselImg'>
+                      <img src='imgClients/$img3' alt='dj equipment' class='img-responsive'>
+                      <div class='carousel-caption'>
+                        <p class='animated animated fadeInDownBig'><strong>$text3</strong></p>
+                        <br>
+                      </div>
+                    </div>
+                    <div class='item peopleCarouselImg'>
+                      <img src='imgClients/$img4' alt='dj equipment' class='img-responsive'>
+                      <div class='carousel-caption'>
+                        <p class='animated animated fadeInDownBig'><strong>$text4</strong></p>
+                        <br>
+                      </div>
+                    </div>
+
+            ";
+          ?>
+
       </div>
         <!-- START SLIDER CONTROLS -->
         <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
@@ -100,7 +131,7 @@
   <div class="row">
     <div class="col-sm-6 mail-content">
       <form action="https://formspree.io/stojkovicmladen97@gmail.com" method="POST">
-        <h3>Hire Janny Vas For Your Event</h3>
+        <h3>Hire Me For Your Event</h3>
         <br>
         <label><span>Your Name</span>
         <input type="text" name="name"></label>
